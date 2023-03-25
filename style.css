@@ -2,15 +2,67 @@ body {
     background-color: rgb(43, 122, 119);
 }
 
+.visor {
+    position: relative;;
+    background-color: greenyellow;
+    height: 30px;
+    width: 200px;
+
+}
+
 .calculadora {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    height:300px;
+    width:200px;
+    margin: 0 auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    gap: 5px;
+    gap: 8px;
     padding: 10px;
-    background-color: #f2f2f2;
+    background-color:rgb(24, 35, 41);
 }
 
 .numeros {
-    padding: 30px;
+
+    padding: 20px;
+    background-color: rgb(75, 171, 170);
+    padding: 0.5em 1em;
+    border: 1px solid #333;
+    background-color: #666;
+    color: #fff;
+    text-shadow: 0px 1px 1px #333;
+    box-shadow: inset 0px 1px 0px #999;
+    border-radius: 3px;
+    transition: all 0.1s ease;
 }
+
+.numeros:hover {
+    background-color: #999;
+    box-shadow: inset 0px 3px 0px #666;
+    text-shadow: 0px 2px 1px #333;
+  }
+  
+.simbolos {
+    padding: 20px;
+    background-color: rgb(75, 171, 170);
+    padding: 0.5em 1em;
+    border: 1px solid #333;
+    background-color: rgb(18, 165, 116);
+    color: #fff;
+    text-shadow: 0px 1px 1px #333;
+    box-shadow: inset 0px 1px 0px #999;
+    border-radius: 3px;
+    transition: all 0.1s ease;
+}
+
+.simbolos:hover {
+    background-color: #999;
+    box-shadow: inset 0px 3px 0px #666;
+    text-shadow: 0px 2px 1px #333;
+}
+  
+  
+  
+  
