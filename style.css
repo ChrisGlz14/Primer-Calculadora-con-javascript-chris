@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(43, 122, 119);
+}
+
+.calculadora {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 5px;
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+
+.numeros {
+    padding: 30px;
+}
