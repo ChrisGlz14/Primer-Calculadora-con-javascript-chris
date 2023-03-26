@@ -1,65 +1,63 @@
-body {
-    background-color: rgb(43, 122, 119);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
-
+body {
+    min-height: 100vh;
+    background-color: rgb(43, 122, 119);
+    display: grid;                      /* Permite centrar */  
+    place-items: center;                       /* */ 
+}
 
 .calculadora {
-
-    height:300px;
-    width:200px;
-    margin: 0 auto;
-    margin-top: 100px;
-    border-radius: 10px;
-    gap: 8px;
-    padding: 10px;
     background-color:rgb(24, 35, 41);
-}
+    color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 400px;
+    height: 500px;
+    max-width: 100%;
+    padding: 22px;
+    border-radius: 16px;
+    gap: 8px;
+ }
 
-.calculadora input[type= textfield] {
-    width: 100%;
-    border-radius: 8px;
-}
+ .pantalla {
+    grid-column: 1/5;        /*pongo la pantalla completo a lo largo*/
+    background-color: rgb(9, 82, 42);
+    padding: 17px;
+    font-size: 46px;
+    text-align: right;    /* Alineo a la derecha como las calculadoras*/
+    border-radius: 10px;
+    margin-bottom: 18px;
+    font-family: monospace;
+    font-weight: 600;
+ }
 
-.numeros {
-
+ button {
+    background-color: rgba(25, 96, 204, 0.226);
+    color: rgb(255, 255, 255);
+    border: 0;
     padding: 20px;
-    background-color: rgb(75, 171, 170);
-    padding: 0.5em 1em;
-    border: 1px solid #333;
-    background-color: #666;
-    color: #fff;
-    text-shadow: 0px 1px 1px #333;
-    box-shadow: inset 0px 1px 0px #999;
-    border-radius: 3px;
-    transition: all 0.1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: monospace;
+    cursor: pointer;
+    transform: all 0.3 ease-in;
+    border-radius: 15px;
 }
 
-.numeros:hover {
-    background-color: #999;
-    box-shadow: inset 0px 3px 0px #666;
-    text-shadow: 0px 2px 1px #333;
-  }
-  
-.simbolos {
-    padding: 20px;
-    background-color: rgb(75, 171, 170);
-    padding: 0.5em 1em;
-    border: 1px solid #333;
-    background-color: rgb(18, 165, 116);
-    color: #fff;
-    text-shadow: 0px 1px 1px #333;
-    box-shadow: inset 0px 1px 0px #999;
-    border-radius: 3px;
-    transition: all 0.1s ease;
-}
+button:hover {
+    background-color: rgb(62, 100, 134);
+    transition:background ease 0.3s;
+ }
 
-.simbolos:hover {
-    background-color: #999;
-    box-shadow: inset 0px 3px 0px #666;
-    text-shadow: 0px 2px 1px #333;
-}
-  
-  
-  
-  
+ #igual {
+    grid-column: 1/5;
+ }
+ 
