@@ -2,26 +2,23 @@ body {
     background-color: rgb(43, 122, 119);
 }
 
-.visor {
-    position: relative;;
-    background-color: greenyellow;
-    height: 30px;
-    width: 200px;
 
-}
 
 .calculadora {
-    display: grid;
+
     height:300px;
     width:200px;
     margin: 0 auto;
     margin-top: 100px;
     border-radius: 10px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, 1fr);
     gap: 8px;
     padding: 10px;
     background-color:rgb(24, 35, 41);
+}
+
+.calculadora input[type= textfield] {
+    width: 100%;
+    border-radius: 8px;
 }
 
 .numeros {
